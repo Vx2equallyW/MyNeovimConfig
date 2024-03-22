@@ -17,7 +17,10 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.undofile = true
 
+-- Uncomment line with "UserProfile" if you on Windows
 vim.opt.undodir = os.getenv("UserProfile") .. "/.vim/undodir"
+-- Uncomment line with "Home" if you on Linux
+-- vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
 vim.opt.scrolloff = 9
 vim.opt.signcolumn = "yes"
